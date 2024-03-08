@@ -1,7 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { createDrawerNavigator } from '@react-navigation/drawer'
 
 export default function App() {
+  const Drawer = createDrawerNavigator() // this line is crashing the app
+  
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
